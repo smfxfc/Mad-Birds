@@ -18,8 +18,8 @@ public class Bird : MonoBehaviour
 
     private void Update()
     {
-        GetComponent<LineRenderer>().SetPosition(0, _initialPosition); // starting point of line
-        GetComponent<LineRenderer>().SetPosition(1, transform.position); // ending point of line
+        GetComponent<LineRenderer>().SetPosition(0, transform.position); // ending point of line
+        GetComponent<LineRenderer>().SetPosition(1, _initialPosition); // starting point of line
 
 
         // if bird was launched and has stopped, start reset timer
